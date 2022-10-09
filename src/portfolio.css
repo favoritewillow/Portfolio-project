@@ -8,45 +8,47 @@
 }
 
 h1 {
-  font-family: var(--primary-font-family);
-  font-weight: 700;
-  font-size: 96px;
   color: var(--primary-text-color);
+  font-family: var(--primary-font-family);
+  font-size: 96px;
+  font-weight: 700;
+}
+
+h1,
+.heading p {
   line-height: 1.2;
 }
 
 .heading h2,
 .heading p {
-  font-family: var(--secondary-font-family);
   color: var(--secondary-text-color);
-  line-height: 1.2;
+  font-family: var(--secondary-font-family);
 }
 
 .heading p {
-  font-weight: 700;
   font-size: 36px;
+  font-weight: 700;
+  margin: 0 auto;
 }
 
 .heading h2 {
-  font-weight: 400;
   font-size: 24px;
+  font-weight: 400;
+  line-height: 2;
 }
 
 .heading {
   background: var(--heading-background-color);
-  text-align: center;
   padding: 160px 20px;
-}
-.link {
-  margin: 0 auto;
+  text-align: center;
 }
 
 .btn-branding {
   background: var(--button-background-color);
-  padding: 18px 30px;
   border-radius: 4px;
-  font-family: var(--secondary-font-family);
-  font-weight: 500;
-  font-size: 18px;
   color: #ffffff;
+  font-family: var(--secondary-font-family);
+  font-size: 18px;
+  font-weight: 500;
+  padding: 18px 30px;
 }
