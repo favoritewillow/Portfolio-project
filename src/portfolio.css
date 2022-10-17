@@ -3,8 +3,8 @@
   --secondary-font-family: "Poppins", sans-serif;
   --primary-text-color: #000000;
   --secondary-text-color: #272142;
-  --heading-background-color: #f9f7fe;
-  --button-background-color: #6c63ff;
+  --heading-background-color: #f8f3dd;
+  --button-background-color: #664d03;
 }
 
 h1,
@@ -24,7 +24,7 @@ h3 {
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 30px;
   font-weight: 400;
   line-height: 27px;
   margin-bottom: 50px;
@@ -36,8 +36,9 @@ p {
 }
 
 img {
-  max-width: 100%;
+  border-radius: 4px;
   height: auto;
+  max-width: 100%;
 }
 
 p,
@@ -63,8 +64,15 @@ h2,
 
 .heading {
   background: var(--heading-background-color);
-  padding: 160px 20px;
+  padding: 100px 20px;
   text-align: center;
+}
+
+.photo {
+  border-radius: 4px;
+  border-style: double;
+  margin: auto;
+  max-width: 30%;
 }
 
 .project {
@@ -88,8 +96,9 @@ h2,
 }
 
 .btn-branding:hover {
-  color: #000000;
-  background: var(--button-background-color);
+  color: var(--button-background-color);
+  background: #f8f3dd;
+  border: 1px solid var(--button-background-color);
 }
 
 .btn-branding-outline {
@@ -100,17 +109,30 @@ h2,
 }
 
 .btn-branding-outline:hover {
-  color: #000000;
+  color: #ffffff;
+  background: var(--button-background-color);
   border: 1px solid var(--button-background-color);
 }
 
-@media (max-width: 900px) {
+.footer {
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.footer a {
+  color: var(--button-background-color);
+  text-decoration: none;
+}
+
+@media (max-width: 915px) {
   h1 {
-    font-size: 64px;
+    font-size: 56px;
     line-height: 96px;
   }
 
   h2 {
+    font-size: 30px;
     padding: 0px 10px;
   }
 
@@ -125,15 +147,35 @@ h2,
 
   .btn-branding-outline {
     display: block;
-    text-align: center;
     margin: 5px 70px;
+    text-align: center;
   }
 
-  .heading {
-    padding: 60px 20px;
+  .heading p {
+    font-size: 34px;
+    padding: 0px 20px;
+  }
+
+  .photo {
+    max-width: 70%;
   }
 
   .project {
     padding: 0px 20px;
+  }
+
+  .footer {
+    padding: 0px 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 74px;
+    line-height: 96px;
+  }
+
+  .photo {
+    max-width: 30%;
   }
 }
