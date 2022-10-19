@@ -9,7 +9,7 @@
 
 h1,
 h3,
-.about h1 {
+.content-container h1 {
   color: var(--primary-text-color);
   font-family: var(--primary-font-family);
   font-weight: 700;
@@ -20,15 +20,23 @@ h1 {
   line-height: 128px;
 }
 
-h3 {
-  font-size: 64px;
-}
-
 h2 {
   font-size: 30px;
   font-weight: 400;
   line-height: 27px;
   margin-bottom: 50px;
+}
+
+h3 {
+  font-size: 64px;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  margin: 30px 0px 0px;
+  text-align: center;
 }
 
 p {
@@ -44,10 +52,11 @@ img {
 
 p,
 h2,
+h4,
 .heading h2,
 .heading p,
-.about h2,
-.about p {
+.content-container h2,
+.content-container p {
   color: var(--secondary-text-color);
   font-family: var(--secondary-font-family);
 }
@@ -128,32 +137,32 @@ h2,
   text-decoration: none;
 }
 
-.about {
+.content-container {
   padding: 160px 20px;
 }
 
-.about-section {
+.content {
   margin: 40px;
 }
 
-.about h1 {
+.content-container h1 {
   font-size: 64px;
   line-height: 85px;
 }
 
-.about h2 {
+.content-container h2 {
   font-size: 18px;
   font-weight: 700;
   line-height: 27px;
 }
 
-.about p {
+.content-container p {
   font-weight: 400px;
 }
 
 @media (max-width: 900px) {
   h1,
-  .about h1 {
+  .content-container h1 {
     font-size: 56px;
     line-height: 96px;
   }
@@ -168,8 +177,12 @@ h2,
     text-align: center;
   }
 
+  h4 {
+    font-size: 20px;
+  }
+
   p,
-  .about {
+  .content-container {
     text-align: center;
   }
 
@@ -189,11 +202,21 @@ h2,
   }
 
   .project,
-  .about {
+  .content-container {
     padding: 0px 20px;
   }
-  .about-section {
+
+  .content {
     margin: 30px;
+  }
+
+  .content h3 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .content p {
+    font-size: 12px;
   }
 
   .footer {
