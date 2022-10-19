@@ -8,7 +8,8 @@
 }
 
 h1,
-h3 {
+h3,
+.about h1 {
   color: var(--primary-text-color);
   font-family: var(--primary-font-family);
   font-weight: 700;
@@ -44,7 +45,9 @@ img {
 p,
 h2,
 .heading h2,
-.heading p {
+.heading p,
+.about h2,
+.about p {
   color: var(--secondary-text-color);
   font-family: var(--secondary-font-family);
 }
@@ -125,8 +128,32 @@ h2,
   text-decoration: none;
 }
 
-@media (max-width: 915px) {
-  h1 {
+.about {
+  padding: 160px 20px;
+}
+
+.about-section {
+  margin: 40px;
+}
+
+.about h1 {
+  font-size: 64px;
+  line-height: 85px;
+}
+
+.about h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.about p {
+  font-weight: 400px;
+}
+
+@media (max-width: 900px) {
+  h1,
+  .about h1 {
     font-size: 56px;
     line-height: 96px;
   }
@@ -141,7 +168,8 @@ h2,
     text-align: center;
   }
 
-  p {
+  p,
+  .about {
     text-align: center;
   }
 
@@ -160,22 +188,15 @@ h2,
     max-width: 70%;
   }
 
-  .project {
+  .project,
+  .about {
     padding: 0px 20px;
+  }
+  .about-section {
+    margin: 30px;
   }
 
   .footer {
     padding: 0px 20px;
-  }
-}
-
-@media (min-width: 1024px) {
-  h1 {
-    font-size: 74px;
-    line-height: 96px;
-  }
-
-  .photo {
-    max-width: 30%;
   }
 }
