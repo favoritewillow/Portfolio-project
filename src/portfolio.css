@@ -39,6 +39,12 @@ h4 {
   text-align: center;
 }
 
+h5 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
 p {
   font-size: 16px;
   opacity: 0.7;
@@ -53,6 +59,8 @@ img {
 p,
 h2,
 h4,
+h5,
+nav,
 .heading h2,
 .heading p,
 .content-container h2,
@@ -164,6 +172,33 @@ h4,
   font-weight: 400px;
 }
 
+nav {
+  padding: 20px 0px;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  margin-left: 15px;
+}
+
+nav a {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li:active a {
+  color: var(--button-background-color);
+}
+
 @media (max-width: 900px) {
   h1,
   .content-container h1 {
@@ -188,6 +223,18 @@ h4,
   p,
   .content-container {
     text-align: center;
+  }
+
+  nav {
+    padding: 5px 0px;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  nav li {
+    margin-left: 5px;
   }
 
   .btn-branding-outline {
