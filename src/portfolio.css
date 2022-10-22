@@ -140,19 +140,13 @@ nav,
   border: 1px solid var(--button-background-color);
 }
 
-.footer {
-  font-size: 12px;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
 .footer a {
   color: var(--button-background-color);
   text-decoration: none;
 }
 
 .content-container {
-  padding: 160px 20px;
+  padding: 50px 20px;
 }
 
 .content {
@@ -201,7 +195,11 @@ nav a {
 }
 
 nav a:hover,
-nav li:active a {
+.email a:hover {
+  color: var(--button-background-color);
+}
+
+#active a {
   color: var(--button-background-color);
 }
 
@@ -230,6 +228,10 @@ footer .social-links a {
   border-radius: 50%;
   font-size: 18px;
   transition: all 100ms ease-in-out;
+}
+
+.text {
+  font-size: 12px;
 }
 
 @media (max-width: 900px) {
@@ -301,9 +303,5 @@ footer .social-links a {
 
   .content p {
     font-size: 12px;
-  }
-
-  .footer {
-    padding: 0px 20px;
   }
 }
