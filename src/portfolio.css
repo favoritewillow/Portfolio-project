@@ -9,6 +9,7 @@
 
 h1,
 h3,
+h6,
 .content-container h1 {
   color: var(--primary-text-color);
   font-family: var(--primary-font-family);
@@ -43,6 +44,11 @@ h5 {
   font-size: 24px;
   font-weight: 400;
   line-height: 27px;
+}
+
+h6 {
+  font-size: 48px;
+  line-height: 64px;
 }
 
 p {
@@ -197,6 +203,33 @@ nav a {
 nav a:hover,
 nav li:active a {
   color: var(--button-background-color);
+}
+
+footer .contact-box {
+  background: var(--heading-background-color);
+  padding: 30px 100px;
+  border-radius: 4px;
+}
+
+footer .contact-box p {
+  font-size: 18px;
+}
+
+.email a {
+  color: var(--primary-text-color);
+  font-family: var(--secondary-font-family);
+  font-size: 24px;
+  text-decoration: none;
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--button-background-color);
+  background: var(--heading-background-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
 }
 
 @media (max-width: 900px) {
