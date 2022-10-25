@@ -62,6 +62,10 @@ img {
   max-width: 100%;
 }
 
+img:hover {
+  transform: scale(1.05);
+}
+
 p,
 h2,
 h4,
@@ -92,13 +96,6 @@ nav,
   background: var(--heading-background-color);
   padding: 100px 20px;
   text-align: center;
-}
-
-.photo {
-  border-radius: 4px;
-  border-style: double;
-  margin: auto;
-  max-width: 30%;
 }
 
 .project {
@@ -281,10 +278,6 @@ footer .social-links a {
   .heading p {
     font-size: 34px;
     padding: 0px 20px;
-  }
-
-  .photo {
-    max-width: 70%;
   }
 
   .project,
