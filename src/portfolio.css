@@ -137,11 +137,6 @@ nav,
   border: 1px solid var(--button-background-color);
 }
 
-.footer a {
-  color: var(--button-background-color);
-  text-decoration: none;
-}
-
 .content-container {
   padding: 50px 20px;
 }
@@ -200,6 +195,11 @@ nav a:hover,
   color: var(--button-background-color);
 }
 
+.footer a {
+  color: var(--button-background-color);
+  text-decoration: none;
+}
+
 footer .contact-box {
   background: var(--heading-background-color);
   padding: 30px 100px;
@@ -229,6 +229,11 @@ footer .social-links a {
 
 .text {
   font-size: 12px;
+}
+
+.contacts a {
+  text-decoration: none;
+  color: var(--primary-text-color);
 }
 
 @media (max-width: 900px) {
@@ -289,6 +294,11 @@ footer .social-links a {
     margin: 30px;
   }
 
+  .content h1 {
+    font-size: 56px;
+    line-height: 74px;
+  }
+
   .content h3 {
     font-size: 40px;
     text-align: center;
@@ -296,5 +306,9 @@ footer .social-links a {
 
   .content p {
     font-size: 12px;
+  }
+
+  .email a {
+    font-size: 18px;
   }
 }
